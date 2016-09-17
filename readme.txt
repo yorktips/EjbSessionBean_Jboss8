@@ -20,12 +20,12 @@ This sample shows creating a Stateless Session Bean and deploy in Jboss8
 
 5. Home interface and remote interface:
    5.1. Home interface:
-        (1). Client is in same JVM
+        (1). Client is in same WebApp(Ear or War ) in a JVM
         (2). Direct method call(Not RMI)
         (3). Parameter pass by reference
 
    5.2. Remote interface:
-        (1). Client is in different JVM
+        (1). Client is in different JVM or different webapp (even in same JBM, different web app can'e make local call)
         (2). Remote component interface will be handled via remote method invocation (RMI)
         (3). Parameter pass by value   
 
