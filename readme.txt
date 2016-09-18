@@ -7,7 +7,13 @@ This sample shows creating a Stateless Session Bean and deploy in JBoss Applicat
   EJB 3.0 Java Persistence API (JPA)
   
   mysql-connector-java-5.1.39-bin.jar ->  C:\jboss-5.1.0.GA\server\default\lib
+  mysql-ds.xml and persistance.xml must be: META-INFO/
   
+  <connection-url>jdbc:mysql://localhost:3306/test</connection-url> 
+  <driver-class>com.mysql.jdbc.Driver</driver-class> 
+  <user-name>root</user-name> 
+  <password></password> 
+		  
 1. JBOSS  (IP is 192.168.12.2)
    Deploy jar to JBoss8
    HelloWorldSessionBean-0.0.1-SNAPSHOT.jar
