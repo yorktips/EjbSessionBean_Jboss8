@@ -1,6 +1,14 @@
-This sample shows creating a Stateless Session Bean and deploy in Jboss8
+This sample shows creating a Stateless Session Bean and deploy in JBoss Application Server (AS) 5.1.0
 
-1. JBOSS wildfly-8 (IP is 192.168.12.2)
+  JDK 6 (Java SE 6)
+  EJB 3.0 (stateless session bean)
+  Eclipse Indigo
+  JBoss Application Server (AS) 5.1.0
+  EJB 3.0 Java Persistence API (JPA)
+  
+  mysql-connector-java-5.1.39-bin.jar ->  C:\jboss-5.1.0.GA\server\default\lib
+  
+1. JBOSS  (IP is 192.168.12.2)
    Deploy jar to JBoss8
    HelloWorldSessionBean-0.0.1-SNAPSHOT.jar
   
@@ -10,7 +18,7 @@ This sample shows creating a Stateless Session Bean and deploy in Jboss8
 
 3. HelloWordSessionClient makes a remote lookup for this EJB
 
-4. In Wildfly, for remote access to EJBs, use the ejb: namespace with the following syntax:
+4. In JBOSS, for remote access to EJBs, use the ejb: namespace with the following syntax:
 
    For stateless beans:
       ejb:<app-name>/<module-name>/<distinct-name>/<bean-name>!<fully-qualified-classname-of-the-remote-interface>
