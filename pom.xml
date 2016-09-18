@@ -20,6 +20,21 @@
 		<version>3.2</version>
 		<scope>provided</scope>
 	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/javax.annotation/jsr250-api -->
+	<dependency>
+    	<groupId>javax.annotation</groupId>
+    	<artifactId>jsr250-api</artifactId>
+    	<version>1.0</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+    	<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    	<version>5.1.34</version>
+	</dependency>
+		
   </dependencies>
 
   <build>
