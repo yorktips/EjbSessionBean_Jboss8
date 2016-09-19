@@ -17,7 +17,15 @@ This sample shows creating a Stateless Session Bean and deploy in JBoss Applicat
 1. JBOSS  (IP is 192.168.12.2)
    Deploy jar to JBoss8
    HelloWorldSessionBean-0.0.1-SNAPSHOT.jar
-  
+   Create Queue:
+   JBoss Installation Folder/server/default/deploy/jbossmq-destinations-service.xml:
+	 <mbean code="org.jboss.mq.server.jmx.Queue"  
+	   name="jboss.mq.destination:service=Queue,name=BookQueue">  
+	   <depends optional-attribute-name="DestinationManager">
+	      jboss.mq:service=DestinationManager
+	   </depends>  
+	 </mbean>  
+ 
 2. Create App User in JBoss
    User: app1
    Password: pass123!
